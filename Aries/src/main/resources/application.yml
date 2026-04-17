@@ -9,11 +9,7 @@ spring:
       password: ${REDIS_PASSWORD:}
 
 server:
-  port: ${HTTP_PORT:8080}
-
-grpc:
-  server:
-    port: ${GRPC_PORT:9090}
+  port: ${HTTP_PORT:8000}
 
 management:
   endpoints:
