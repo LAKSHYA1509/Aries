@@ -1,6 +1,10 @@
 spring:
   application:
     name: aries-rate-limiter
+  
+  threads:
+    virtual:
+      enabled: true
 
   data:
     redis:
