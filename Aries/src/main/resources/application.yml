@@ -19,7 +19,11 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,prometheus,metrics
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 logging:
   level:
