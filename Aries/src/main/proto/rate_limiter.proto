@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package aries;
+
+option java_package = "com.aries.proto";
+option java_multiple_files = true;
+
+service RateLimiterService {
+  rpc CheckLimit (RateLimitRequest) returns (RateLimitResponse);
+}
+
+message RateLimitRequest {
+  string client_id = 1;
+}
+
+message RateLimitResponse {
+  bool is_allowed = 1;
+}
